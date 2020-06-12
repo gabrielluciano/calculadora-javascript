@@ -4,8 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto de Calculadora</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
+    <header class="header">
+        <h1>Super Calculator</h1>
+    </header>
+    <div class="calculator">
+        <div class="btn blackBtn" onclick="Calculadora('(')">(</div>
+        <div class="btn blackBtn" onclick="Calculadora(')')">)</div>
+        <div style="line-height: 75px;" class="btn blackBtn" onclick="Calculadora('**')">x<sup>y</sup></div>
+        <div style="font-size: 0.8rem;" class="btn blackBtn" onclick="Calculadora('del')">AC</div>
+        <div class="btn whiteBtn" onclick="Calculadora('7')">7</div>
+        <div class="btn whiteBtn" onclick="Calculadora('8')">8</div>
+        <div class="btn whiteBtn" onclick="Calculadora('9')">9</div>
+        <div class="btn blackBtn" onclick="Calculadora('/')">/</div>
+        <div class="btn whiteBtn" onclick="Calculadora('4')">4</div>
+        <div class="btn whiteBtn" onclick="Calculadora('5')">5</div>
+        <div class="btn whiteBtn" onclick="Calculadora('6')">6</div>
+        <div class="btn blackBtn" onclick="Calculadora('*')">x</div>
+        <div class="btn whiteBtn" onclick="Calculadora('1')">1</div>
+        <div class="btn whiteBtn" onclick="Calculadora('2')">2</div>
+        <div class="btn whiteBtn" onclick="Calculadora('3')">3</div>
+        <div class="btn blackBtn" onclick="Calculadora('-')">−</div>
+        <div class="btn whiteBtn" onclick="Calculadora('0')">0</div>
+        <div class="btn whiteBtn" onclick="Calculadora('.')">.</div>
+        <div class="btn blackBtn" onclick="Calculadora('=')">=</div>
+        <div class="btn blackBtn" onclick="Calculadora('+')">+</div>
+        <div class="display">
+            <div class="lastCalc">0</div>
+            <div class="currentCalc">0</div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
